@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway&display=swap');
+:root {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "raleway";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+button {
+  border: 0;
+}
+
+.action-button {
+  color: white;
+  font-weight: 700;
+  border-radius: 10em;
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+}
+
+@media (min-width: 1400px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 0;
+  background-color: #1b2330;
+  
+}
+.nav-logo {
+  height: 1.6em;
+  margin-bottom: 5px;
+}
+.nav-item {
+  display: inline-block;
+  font-family: "Raleway" ;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-left: 1.8em;
+  text-decoration: none;
+  margin-bottom: 5px;
+  color: #afb5c0;
+  text-shadow: 10px;
+}
+
+/* into */
+.intro {
+  background-color:  #1c2431;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  padding: 3.5em 2em 0;
+  
+}
+.intro::before{
+  position: absolute;
+  bottom: 15em;
+  left: 0;
+  height: 11em;
+  width: 100%;
+  background-image: url(./images/bg-curvy-mobile.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.intro ::after {
+  position: absolute;
+  height: 15em;
+  width: 100%;
+  background: #181f2a;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.intro-image { 
+height: 16em;
+margin-bottom: 2.5em;
+}
+.intro-image img {
+  margin: auto;
+}
+.into-text{
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro-title {
+  margin-bottom: 0.7em;
+  line-height: 1.4em;
+}
+.intro-desc{
+  padding: 0 1em;
+  margin-bottom: 2.2em;
+  line-height: 1.7em;
+}
+.intro-action {
+  height: 3.6em;
+  padding: 1.2em 6.2em;
+}
+
+
+.features {
+  text-align: center;
+  background-color: #181f2a;
+}
+.features-list {
+  padding: 0 2em;
+}
+.features-list :first-child {
+  padding-top: 9.5em;
+}
+.features-item {
+  display: inline-block;
+  margin: 0 auto;
+}
+.features-item + .features-item{
+  margin-top: 7em;
+}
+.features-title {
+  margin-bottom: 0.5em;
+}
+.features-image {
+  height: 4.2em;
+  margin-bottom: 2.5em;
+}
+.features-image img {
+margin: auto;
+}
